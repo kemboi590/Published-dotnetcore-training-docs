@@ -1,0 +1,414 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-http.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-none.min.js"></script><style>
+        .article {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+        .center-text {
+            text-align: center;
+        }
+        
+
+        .code-block {
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            border-radius: 8px;
+            font-variant-ligatures: none;
+            background-color: rgba(25, 25, 28, .05);
+            word-break: break-all;
+        }
+        
+
+        .container {
+            max-width: 100%;
+            overflow: hidden;
+            page-break-inside: avoid;
+            display: block;
+        }
+        
+
+        .control {
+            color: #19191c;
+            font-size: 16px;
+            font-weight: 670;
+        }
+        
+
+        .detached {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-bottom: 8px;
+        }
+        
+
+        .emphasis {
+            color: inherit;
+            font-weight: inherit;
+            font-style: italic;
+        }
+        
+
+        .header-row {
+            background: #e6e6e6;
+        }
+        
+
+        .image {
+            max-width: 100%;
+            max-height: 90vh;
+            height: auto;
+        }
+        
+
+        .image-container {
+            max-width: 100vw;
+        }
+        
+
+        .image-size {
+            height: auto;
+        }
+        
+
+        .inline-code {
+            border-radius: 4px;
+            display: inline;
+            padding: 2px 1px;
+            font-family: JetBrains Sans,monospace;
+            background: #e6e6e6;
+        }
+        
+
+        .list {
+            list-style-type: disc;
+            padding-left: 0;
+            margin-left: 15px;
+        }
+        
+
+        .list-decimal {
+            list-style-type: decimal;
+        }
+        
+
+        .list-item {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-left: 4px;
+        }
+        
+
+        .main-title {
+            padding-bottom: 24px;
+            margin-top: 0;
+            font-size: 40px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .prism {
+            page-break-inside: avoid;
+        }
+        
+        /* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+armasm+arturo+asciidoc+aspnet+asm6502+asmatmel+autohotkey+autoit+avisynth+avro-idl+awk+bash+basic+batch+bbcode+bbj+bicep+birb+bison+bnf+bqn+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cfscript+chaiscript+cil+cilkc+cilkcpp+clojure+cmake+cobol+coffeescript+concurnas+csp+cooklang+coq+crystal+css-extras+csv+cue+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+dot+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+false+firestore-security-rules+flow+fortran+ftl+gml+gap+gcode+gdscript+gedcom+gettext+gherkin+git+glsl+gn+linker-script+go+go-module+gradle+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+hoon+http+hpkp+hsts+ichigojam+icon+icu-message-format+idris+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jexl+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keepalived+keyman+kotlin+kumir+kusto+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+log+lolcode+lua+magma+makefile+markdown+markup-templating+mata+matlab+maxscript+mel+mermaid+metafont+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nevod+nginx+nim+nix+nsis+objectivec+ocaml+odin+opencl+openqasm+oz+parigp+parser+pascal+pascaligo+psl+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plant-uml+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+qsharp+q+qml+qore+r+racket+cshtml+jsx+tsx+reason+regex+rego+renpy+rescript+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+squirrel+stan+stata+iecst+stylus+supercollider+swift+systemd+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+tremor+turtle+twig+typescript+typoscript+unrealscript+uorazor+uri+v+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+web-idl+wgsl+wiki+wolfram+wren+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=highlight-keywords */
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre-wrap;word-spacing:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:16px;margin:0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+
+        
+
+        :root {
+            width: 95%;
+            max-width: 95vw;
+            padding: 0 0 0 30px;
+        }
+        
+        body {
+            font-family: JetBrains Sans,serif;
+        }
+        
+        a {
+            overflow-wrap: anywhere;
+            width: 100vw;
+        }
+        
+        
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff) format("woff");
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff) format("woff");
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        
+        code {
+            display: inline;
+            word-break: break-word;
+            font-size: 15px;
+            line-height: inherit;
+            font-variant-ligatures: none;
+            font-family: JetBrains Sans,monospace;
+            white-space: pre-line;
+            overflow-wrap: break-word;
+        }
+        
+        figcaption {
+            margin-top: 5px;
+        }
+        
+        h2 {
+            padding-top: 16px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h3 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h4 {
+            padding-top: 4px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        p {
+            padding: 0;
+            border: 0;
+            line-height: 25px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-bottom: 8px;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            page-break-inside: avoid;
+        }
+        
+        th, td {
+            border: 1px solid #c4c4c4;
+            padding: 10px;
+            text-align: left;
+            word-break: break-all;
+        }
+        
+        .no-bold {
+            font-weight: normal; 
+        }
+        
+        .entry {
+            display: grid;
+            grid-template-columns: auto max-content;
+            grid-template-areas: "chapter page";
+            align-items: end;
+            gap: 0 .25rem;
+            line-height: 25px;
+        }
+        
+        .toc-link-container{
+            grid-area: chapter;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .toc-link{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .toc-link-container::after {
+            position: absolute;
+            padding-left: .25ch;
+            content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+            text-align: right;
+        }
+        
+        .page {
+            grid-area: page;
+            width: 30px;
+            text-align: right;
+        }
+        
+
+        .table-wrapper {
+            overflow: hidden;
+            box-sizing: border-box;
+            font: inherit;
+        }
+        
+
+        .topic {
+            page-break-before: always;
+        }
+        </style><title>pdfSourceHI</title></head><body><div><section class="topic"><div><article class="article"><h1 class="main-title">Table of Contents</h1><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1990648741">Dotnet Core Documentation</a></div><div class="page">2</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#719159941">Minimal Apis</a></div><div class="page">30</div></div></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1990648741">Dotnet Core Documentation</h1><section class="detached"><h2 id="1990648741#introduction-to-minimal-api" data-toc="introduction-to-minimal-api#Dotnet-Core-Documentation.md-introduction-to-minimal-api">Introduction to Minimal API</h2><p id="1990648741#z62anps_13">We will create an event API to build on the concept of minimal APIs. This API will help you learn about:</p><ol class="list list-decimal" id="1990648741#z62anps_14" type="1" start="1"><li class="list-item" id="1990648741#z62anps_17"><p id="1990648741#z62anps_20">Project structure</p></li><li class="list-item" id="1990648741#z62anps_18"><p id="1990648741#z62anps_21">REST API</p></li><li class="list-item" id="1990648741#z62anps_19"><p id="1990648741#z62anps_22">CRUD Functionality</p></li></ol><p id="1990648741#z62anps_15">We will use an in-memory database for now, meaning the data will not be permanently saved to the database. When the a### How it Works in .NET Core</p><ul class="list" id="1990648741#z62anps_16" start="1"><li class="list-item" id="1990648741#z62anps_23"><p id="1990648741#z62anps_27">ASP.NET Core has a built-in DI Container. Just the same way we registered the DbContext, the DI tells the system &quot;When someone asks for an <span class="inline-code" id="1990648741#z62anps_28">AppDbContext</span>, here's how to create it.&quot;</p></li><li class="list-item" id="1990648741#z62anps_24"><p id="1990648741#z62anps_29">Later, when your app needs that <span class="inline-code" id="1990648741#z62anps_30">AppDbContext</span> in a class (e.g., a controller or service), you don't create it manually &mdash; the system <span class="control" id="1990648741#z62anps_31">automatically injects it for you</span>.</p></li><li class="list-item" id="1990648741#z62anps_25"><p id="1990648741#z62anps_32">An example is registering AppDbContext with the In-Memory Database. It will register <span class="control" id="1990648741#z62anps_33">AppDbContext</span> as a service. It then tells the system to use an in-memory database when creating AppDbContext.</p></li><li class="list-item" id="1990648741#z62anps_26"><p id="1990648741#z62anps_34">Later, when we create a class, here's how the DI is injected:tion starts, it will clear any previous data. We will later connect to Microsoft SQL Server.</p></li></ul></section><section class="detached"><h2 id="1990648741#requirements" data-toc="requirements#Dotnet-Core-Documentation.md-requirements">Requirements</h2><ol class="list list-decimal" id="1990648741#z62anps_35" type="1" start="1"><li class="list-item" id="1990648741#z62anps_36"><p id="1990648741#z62anps_39">Code Editor - Visual Studio is preferred</p></li><li class="list-item" id="1990648741#z62anps_37"><p id="1990648741#z62anps_40">Fundamental concepts of C# language</p></li><li class="list-item" id="1990648741#z62anps_38"><p id="1990648741#z62anps_41">Readiness to learn <span class="no-bold">🙂</span></p></li></ol></section><section class="detached"><h2 id="1990648741#step-1-create-an-empty-net-core-project" data-toc="step-1-create-an-empty-net-core-project#Dotnet-Core-Documentation.md-step-1-create-an-empty-net-core-project">Step 1: Create an Empty .NET Core Project</h2></section><section class="detached"><h2 id="1990648741#step-2-what-is-included-in-the-project-and-running-the-scaffolded-project" data-toc="step-2-what-is-included-in-the-project-and-running-the-scaffolded-project#Dotnet-Core-Documentation.md-step-2-what-is-included-in-the-project-and-running-the-scaffolded-project">Step 2: What is Included in the Project and Running the Scaffolded Project</h2><p id="1990648741#z62anps_42">You should have the following code in the <span class="emphasis" id="1990648741#z62anps_48"><span class="control" id="1990648741#z62anps_49">Program.cs</span></span> file. Program.cs is the entry point of the application, and we will be referencing it several times.</p><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_43" alt="1753097002946.png" title="1753097002946.png" src="D:/writerside/Writerside/image/Readme/1753097002946.png" width="1903" height="897"><figcaption class="center-text">1753097002946.png</figcaption></figure></div><ul class="list" id="1990648741#z62anps_44" start="1"><li class="list-item" id="1990648741#z62anps_50"><p id="1990648741#z62anps_53">Press the keys Ctrl + F5 or click the &quot;Run without debugging&quot; button to run the application.</p></li><li class="list-item" id="1990648741#z62anps_51"><p id="1990648741#z62anps_54">You should have a browser launched with <span class="emphasis" id="1990648741#z62anps_55"><span class="control" id="1990648741#z62anps_56">Hello World</span></span> being displayed. This shows that the project configuration looks good.</p></li><li class="list-item" id="1990648741#z62anps_52"><p id="1990648741#z62anps_57">Let's break down the scaffolded project:</p></li></ul><section class="detached"><h3 id="1990648741#properties-launchsettings-json" data-toc="properties-launchsettings-json#Dotnet-Core-Documentation.md-properties-launchsettings-json">Properties/launchSettings.json</h3><p id="1990648741#z62anps_59">This file tells Visual Studio or dotnet run how to launch the app during development, including:</p><ul class="list" id="1990648741#z62anps_60" start="1"><li class="list-item" id="1990648741#z62anps_64"><p id="1990648741#z62anps_68">[ ] Ports</p></li><li class="list-item" id="1990648741#z62anps_65"><p id="1990648741#z62anps_69">[ ] Whether a browser should open</p></li><li class="list-item" id="1990648741#z62anps_66"><p id="1990648741#z62anps_70">[ ] Environment variables</p></li><li class="list-item" id="1990648741#z62anps_67"><p id="1990648741#z62anps_71">[ ] HTTPS or HTTP settings</p></li></ul><section class="detached"><h4 id="1990648741#schema" data-toc="schema#Dotnet-Core-Documentation.md-schema">Schema</h4><div class="detached code-block" id="1990648741#z62anps_72"><pre><code class="language-json">&quot;$schema&quot;: &quot;https://json.schemastore.org/launchsettings.json&quot;,</code></pre></div><p id="1990648741#z62anps_73">The above line defines the JSON Schema - this helps editors like VS Code with IntelliSense and validation.</p></section><section class="detached"><h4 id="1990648741#profiles" data-toc="profiles#Dotnet-Core-Documentation.md-profiles">Profiles</h4><p id="1990648741#z62anps_74">Defines a way to run the application - we have two profiles: &quot;http&quot; and &quot;https&quot;</p><ul class="list" id="1990648741#z62anps_75" start="1"><li class="list-item" id="1990648741#z62anps_81"><p id="1990648741#z62anps_86">[ ] <span class="emphasis" id="1990648741#z62anps_87"><span class="control" id="1990648741#z62anps_88">commandName</span></span>: tells dotnet to launch the main project with dotnet run</p></li><li class="list-item" id="1990648741#z62anps_82"><p id="1990648741#z62anps_89">[ ] <span class="emphasis" id="1990648741#z62anps_90"><span class="control" id="1990648741#z62anps_91">dotnetRunMessages</span></span>: shows the usual logs like (&quot;now listening on http://&quot;)</p></li><li class="list-item" id="1990648741#z62anps_83"><p id="1990648741#z62anps_92">[ ] <span class="emphasis" id="1990648741#z62anps_93"><span class="control" id="1990648741#z62anps_94">launchBrowser</span></span>: used to auto-launch the browser</p></li><li class="list-item" id="1990648741#z62anps_84"><p id="1990648741#z62anps_95">[ ] <span class="emphasis" id="1990648741#z62anps_96"><span class="control" id="1990648741#z62anps_97">applicationUrl</span></span>: Port where the application will be running</p></li><li class="list-item" id="1990648741#z62anps_85"><p id="1990648741#z62anps_98">[ ] <span class="emphasis" id="1990648741#z62anps_99"><span class="control" id="1990648741#z62anps_100">environmentVariables</span></span>: Sets the environment variables like &quot;Development&quot;</p></li></ul><p id="1990648741#z62anps_76">To avoid having the browser launch every time you run your project, head to the Properties folder and open the <span class="emphasis" id="1990648741#z62anps_101">launchSettings.json</span> file. You should see a property called ***launchBrowser: &quot;true&quot;***. Change that to <span class="emphasis" id="1990648741#z62anps_102"><span class="control" id="1990648741#z62anps_103">launchBrowser: &quot;false&quot;</span></span> for both the profiles (http and https).</p><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_77" alt="1753097399085.png" title="1753097399085.png" src="D:/writerside/Writerside/image/Readme/1753097399085.png" width="1476" height="811"><figcaption class="center-text">1753097399085.png</figcaption></figure></div><p id="1990648741#z62anps_78">The Dependencies folder will hold all the packages we will be installing from NuGet Package Manager (<a href="https://www.nuget.org/">https://www.nuget.org/</a>)</p><p id="1990648741#z62anps_79"><span class="control" id="1990648741#z62anps_105">What is NuGet?</span></p><p id="1990648741#z62anps_80">NuGet is the package manager for .NET. The NuGet client tools provide the ability to produce and consume packages. The NuGet Gallery is the central package repository used by all package authors and consumers.</p></section></section><section class="detached"><h3 id="1990648741#connected-services-folder" data-toc="connected-services-folder#Dotnet-Core-Documentation.md-connected-services-folder">Connected Services Folder</h3><p id="1990648741#z62anps_106">This folder provides tooling to connect your application to external services like:</p><ul class="list" id="1990648741#z62anps_107" start="1"><li class="list-item" id="1990648741#z62anps_108"><p id="1990648741#z62anps_112">[ ] Web APIs - OpenAPI/Swagger for API calls</p></li><li class="list-item" id="1990648741#z62anps_109"><p id="1990648741#z62anps_113">[ ] gRPC services - Add and consume gRPC endpoints</p></li><li class="list-item" id="1990648741#z62anps_110"><p id="1990648741#z62anps_114">[ ] Azure Services - Connect to older SOAP/WCF services</p></li><li class="list-item" id="1990648741#z62anps_111"><p id="1990648741#z62anps_115">[ ] Databases - connect to a database and generate models with EF</p></li></ul></section><section class="detached"><h3 id="1990648741#program-cs-file" data-toc="program-cs-file#Dotnet-Core-Documentation.md-program-cs-file">Program.cs File</h3><p id="1990648741#z62anps_116">This is the entry point of the application. Let's break it down:</p><ol class="list list-decimal" id="1990648741#z62anps_117" type="1" start="1"><li class="list-item" id="1990648741#z62anps_118"><p id="1990648741#z62anps_122"><span class="control" id="1990648741#z62anps_124">var builder = WebApplication.CreateBuilder(args);</span></p><ul class="list" id="1990648741#z62anps_123" start="1"><li class="list-item" id="1990648741#z62anps_125"><p id="1990648741#z62anps_127">Used to create a <span class="emphasis" id="1990648741#z62anps_128"><span class="control" id="1990648741#z62anps_129">WebApplicationBuilder</span></span> instance</p></li><li class="list-item" id="1990648741#z62anps_126"><p id="1990648741#z62anps_130">It configures services, logging, environment, and app settings</p></li></ul></li><li class="list-item" id="1990648741#z62anps_119"><p id="1990648741#z62anps_131"><span class="control" id="1990648741#z62anps_133">var app = builder.Build();</span></p><ul class="list" id="1990648741#z62anps_132" start="1"><li class="list-item" id="1990648741#z62anps_134"><p id="1990648741#z62anps_136">This builds the application</p></li><li class="list-item" id="1990648741#z62anps_135"><p id="1990648741#z62anps_137">Creates a <span class="emphasis" id="1990648741#z62anps_138"><span class="control" id="1990648741#z62anps_139">WebApplication</span></span> instance, making the app ready to define endpoints and middlewares</p></li></ul></li><li class="list-item" id="1990648741#z62anps_120"><p id="1990648741#z62anps_140"><span class="control" id="1990648741#z62anps_142">app.MapGet(&quot;/&quot;, () =&gt; &quot;Hello World!&quot;);</span></p><ul class="list" id="1990648741#z62anps_141" start="1"><li class="list-item" id="1990648741#z62anps_143"><p id="1990648741#z62anps_145">This is where you <span class="control" id="1990648741#z62anps_146">define your first API endpoint</span>. Whenever you visit the endpoint, it returns &quot;Hello World&quot;.</p></li><li class="list-item" id="1990648741#z62anps_144"><p id="1990648741#z62anps_147"><span class="control" id="1990648741#z62anps_148">() =&gt; &quot;Hello World!&quot;</span> - this is a lambda function that returns a string. Lambda is a concept in C#.</p></li></ul></li><li class="list-item" id="1990648741#z62anps_121"><p id="1990648741#z62anps_149"><span class="control" id="1990648741#z62anps_151">app.Run();</span></p><ul class="list" id="1990648741#z62anps_150" start="1"><li class="list-item" id="1990648741#z62anps_152"><p id="1990648741#z62anps_155">This <span class="control" id="1990648741#z62anps_156">starts the web server</span>.</p></li><li class="list-item" id="1990648741#z62anps_153"><p id="1990648741#z62anps_157">It starts listening for HTTP requests on the specified port(s)</p></li><li class="list-item" id="1990648741#z62anps_154"><p id="1990648741#z62anps_158">It keeps the application running</p></li></ul></li></ol></section></section><section class="detached"><h2 id="1990648741#step-3-create-models-folder" data-toc="step-3-create-models-folder#Dotnet-Core-Documentation.md-step-3-create-models-folder">Step 3: Create Models Folder</h2><p id="1990648741#z62anps_159">Add a folder at the root of the project and name it Models. The Models folder will hold all the entities we will be using. An entity is similar to a table in relational databases.</p><p id="1990648741#z62anps_160">Inside the newly created Models folder, add a class named Event. This will hold the properties of an event.</p><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_161" alt="1753171415175.png" title="1753171415175.png" src="D:/writerside/Writerside/image/Readme/1753171415175.png" width="1906" height="793"><figcaption class="center-text">1753171415175.png</figcaption></figure></div><ul class="list" id="1990648741#z62anps_162" start="1"><li class="list-item" id="1990648741#z62anps_165"><p id="1990648741#z62anps_168">All the fields are made public, meaning they can be accessed from anywhere in the application</p></li><li class="list-item" id="1990648741#z62anps_166"><p id="1990648741#z62anps_169">These properties are of different data types which simulate the real-world object of an event</p></li><li class="list-item" id="1990648741#z62anps_167"><p id="1990648741#z62anps_170">The string property has &quot;?&quot; because by default, all strings are nullable</p></li></ul><section class="detached"><h3 id="1990648741#concept-of-nullable-reference-types" data-toc="concept-of-nullable-reference-types#Dotnet-Core-Documentation.md-concept-of-nullable-reference-types">Concept of Nullable Reference Types</h3><p id="1990648741#z62anps_171">This is a concept that was introduced in C# 8.0. In older versions of C#, you could not be warned if there was a potential null value. With nullable reference types, C# became more strict and smart by helping you catch null issues at compile time.</p><ul class="list" id="1990648741#z62anps_172" start="1"><li class="list-item" id="1990648741#z62anps_174"><p id="1990648741#z62anps_176"><span class="emphasis" id="1990648741#z62anps_177"><span class="control" id="1990648741#z62anps_178">public string Description { get; set; }</span></span> - This means that you guarantee that the Description will never be null. If you do not initialize any value, the compiler will warn you.</p></li><li class="list-item" id="1990648741#z62anps_175"><p id="1990648741#z62anps_179"><span class="emphasis" id="1990648741#z62anps_180"><span class="control" id="1990648741#z62anps_181">public string? Description { get; set; }</span></span> - This means that Description can be null. This tells the compiler that it's okay if the property is null, and it won't warn you.</p></li></ul><section class="detached"><h4 id="1990648741#turning-nullable-on-and-off" data-toc="turning-nullable-on-and-off#Dotnet-Core-Documentation.md-turning-nullable-on-and-off">Turning Nullable ON and OFF</h4><p id="1990648741#z62anps_182">This behavior is controlled by a setting in the .csproj file:</p><div class="detached code-block" id="1990648741#z62anps_183"><pre><code class="language-markup">&lt;Nullable&gt;enable&lt;/Nullable&gt;</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_184" alt="1753172173059.png" title="1753172173059.png" src="D:/writerside/Writerside/image/Readme/1753172173059.png" width="1210" height="429"><figcaption class="center-text">1753172173059.png</figcaption></figure></div><p id="1990648741#z62anps_185">Read more about Nullable reference types (<a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-reference-types?WT.mc_id=studentamb_244628">https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-reference-types?WT.mc_id=studentamb_244628</a>)</p></section></section><section class="detached"><h3 id="1990648741#csproj-file" data-toc="csproj-file#Dotnet-Core-Documentation.md-csproj-file">.csproj File</h3><p id="1990648741#z62anps_187">This is an important file - it's like the heart of the project configuration. It is an XML file that defines:</p><ul class="list" id="1990648741#z62anps_188" start="1"><li class="list-item" id="1990648741#z62anps_189"><p id="1990648741#z62anps_193">What files are part of the project</p></li><li class="list-item" id="1990648741#z62anps_190"><p id="1990648741#z62anps_194">What dependencies (NuGet packages) are needed</p></li><li class="list-item" id="1990648741#z62anps_191"><p id="1990648741#z62anps_195">What version of .NET to use</p></li><li class="list-item" id="1990648741#z62anps_192"><p id="1990648741#z62anps_196">Build settings, project properties, and more</p></li></ul></section></section><section class="detached"><h2 id="1990648741#step-4-ef-core-and-db-context" data-toc="step-4-ef-core-and-db-context#Dotnet-Core-Documentation.md-step-4-ef-core-and-db-context">Step 4: EF Core and DB Context</h2><section class="detached"><h3 id="1990648741#documentation-resources" data-toc="documentation-resources#Dotnet-Core-Documentation.md-documentation-resources">Documentation/Resources</h3><p id="1990648741#z62anps_201">Official docs (<a href="https://learn.microsoft.com/en-us/ef/core/?WT.mc_id=studentamb_244628">https://learn.microsoft.com/en-us/ef/core/?WT.mc_id=studentamb_244628</a>)</p><p id="1990648741#z62anps_202">Readme Presentation (<a href="https://github.com/kenya-data-platform-user-group/EF-Core-Presentation">https://github.com/kenya-data-platform-user-group/EF-Core-Presentation</a>)</p><p id="1990648741#z62anps_203">YouTube Tutorial by Nick Chapsas (<a href="https://www.youtube.com/watch?v=2t88FOeQ898">https://www.youtube.com/watch?v=2t88FOeQ898</a>)</p></section><section class="detached"><h3 id="1990648741#what-is-ef-core" data-toc="what-is-ef-core#Dotnet-Core-Documentation.md-what-is-ef-core">What is EF Core?</h3><p id="1990648741#z62anps_208">EF Core is a modern, open-source, and cross-platform <span class="control" id="1990648741#z62anps_211">Object-Relational Mapper (ORM)</span> for .NET that eliminates the need to write complex SQL queries manually. It allows developers to work with databases using <span class="control" id="1990648741#z62anps_212">C# classes and LINQ</span> instead of SQL.</p><p id="1990648741#z62anps_209">EF Core acts as a bridge between <span class="control" id="1990648741#z62anps_213">.NET applications</span> and <span class="control" id="1990648741#z62anps_214">databases</span>, allowing developers to perform operations using object-oriented techniques.</p><section class="detached"><h4 id="1990648741#why-ef-core" data-toc="why-ef-core#Dotnet-Core-Documentation.md-why-ef-core">Why EF Core?</h4><section class="detached"><h5 id="1990648741#1-quick-story-example" data-toc="1-quick-story-example#Dotnet-Core-Documentation.md-1-quick-story-example">1. Quick Story/Example</h5><p id="1990648741#z62anps_218">Imagine you're building a .NET application and need to interact with a database. How do you do it efficiently? You could write raw SQL queries, but that can be error-prone and hard to maintain. This is where an ORM (Object-Relational Mapper) like EF Core comes in handy.</p></section><section class="detached"><h5 id="1990648741#2-how-do-we-interact-with-databases-in-net" data-toc="2-how-do-we-interact-with-databases-in-net#Dotnet-Core-Documentation.md-2-how-do-we-interact-with-databases-in-net">2. How Do We Interact with Databases in .NET?</h5><p id="1990648741#z62anps_219">Before Entity Framework Core (EF Core), developers interacted with databases using <span class="control" id="1990648741#z62anps_222">ADO.NET</span>, <span class="control" id="1990648741#z62anps_223">Dapper</span>, or raw SQL queries. While these approaches provided control and performance, they often required writing a lot of boilerplate code for CRUD operations:</p><ul class="list" id="1990648741#z62anps_220" start="1"><li class="list-item" id="1990648741#z62anps_224"><p id="1990648741#z62anps_228">Open a database connection</p></li><li class="list-item" id="1990648741#z62anps_225"><p id="1990648741#z62anps_229">Write SQL queries manually</p></li><li class="list-item" id="1990648741#z62anps_226"><p id="1990648741#z62anps_230">Handle result mappings to objects</p></li><li class="list-item" id="1990648741#z62anps_227"><p id="1990648741#z62anps_231">Manage transactions and exceptions explicitly</p></li></ul><p id="1990648741#z62anps_221">This process is repetitive and error-prone. This is where <span class="control" id="1990648741#z62anps_232">EF Core</span> comes in.</p></section><section class="detached"><h5 id="1990648741#3-why-use-ef-core" data-toc="3-why-use-ef-core#Dotnet-Core-Documentation.md-3-why-use-ef-core">3. Why Use EF Core?</h5><section class="detached"><h6 id="1990648741#a-simplifies-data-access" data-toc="a-simplifies-data-access#Dotnet-Core-Documentation.md-a-simplifies-data-access">a. Simplifies Data Access</h6><p id="1990648741#z62anps_236">EF Core abstracts database interactions, allowing developers to use <span class="control" id="1990648741#z62anps_237">C# objects</span> instead of SQL queries.</p></section><section class="detached"><h6 id="1990648741#b-boosts-productivity" data-toc="b-boosts-productivity#Dotnet-Core-Documentation.md-b-boosts-productivity">b. Boosts Productivity</h6><ul class="list" id="1990648741#z62anps_238" start="1"><li class="list-item" id="1990648741#z62anps_239"><p id="1990648741#z62anps_242">Eliminates the need to write repetitive SQL queries</p></li><li class="list-item" id="1990648741#z62anps_240"><p id="1990648741#z62anps_243">Supports <span class="control" id="1990648741#z62anps_244">automatic migrations</span> to handle database schema changes</p></li><li class="list-item" id="1990648741#z62anps_241"><p id="1990648741#z62anps_245">Works seamlessly with <span class="control" id="1990648741#z62anps_246">LINQ queries</span> for data retrieval</p></li></ul></section><section class="detached"><h6 id="1990648741#c-supports-multiple-databases" data-toc="c-supports-multiple-databases#Dotnet-Core-Documentation.md-c-supports-multiple-databases">c. Supports Multiple Databases</h6><p id="1990648741#z62anps_247">EF Core is database-agnostic and supports multiple database providers, including:</p><ul class="list" id="1990648741#z62anps_248" start="1"><li class="list-item" id="1990648741#z62anps_249"><p id="1990648741#z62anps_254"><span class="control" id="1990648741#z62anps_255">SQL Server</span></p></li><li class="list-item" id="1990648741#z62anps_250"><p id="1990648741#z62anps_256"><span class="control" id="1990648741#z62anps_257">PostgreSQL</span></p></li><li class="list-item" id="1990648741#z62anps_251"><p id="1990648741#z62anps_258"><span class="control" id="1990648741#z62anps_259">MySQL</span></p></li><li class="list-item" id="1990648741#z62anps_252"><p id="1990648741#z62anps_260"><span class="control" id="1990648741#z62anps_261">SQLite</span></p></li><li class="list-item" id="1990648741#z62anps_253"><p id="1990648741#z62anps_262"><span class="control" id="1990648741#z62anps_263">Azure Cosmos DB</span></p></li></ul></section></section></section></section><section class="detached"><h3 id="1990648741#setting-up-ef-core" data-toc="setting-up-ef-core#Dotnet-Core-Documentation.md-setting-up-ef-core">Setting Up EF Core</h3><section class="detached"><h4 id="1990648741#step-1-installing-database-provider" data-toc="step-1-installing-database-provider#Dotnet-Core-Documentation.md-step-1-installing-database-provider">Step 1: Installing Database Provider</h4><p id="1990648741#z62anps_266">In Visual Studio, click on Tools &rarr; NuGet Package Manager and search for <span class="emphasis" id="1990648741#z62anps_270"><span class="control" id="1990648741#z62anps_271">Microsoft.EntityFrameworkCore.InMemory</span></span> and install it in your project.</p><p id="1990648741#z62anps_267"><span class="control" id="1990648741#z62anps_272">This is an Entity Framework Core (EF Core) provider</span> that allows you to use an <span class="control" id="1990648741#z62anps_273">in-memory database</span>, mainly for <span class="control" id="1990648741#z62anps_274">testing or prototyping</span>.</p><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_268" alt="1753175412478.png" title="1753175412478.png" src="D:/writerside/Writerside/image/Readme/1753175412478.png" width="1378" height="585"><figcaption class="center-text">1753175412478.png</figcaption></figure></div><section class="detached"><h5 id="1990648741#limitations" data-toc="limitations#Dotnet-Core-Documentation.md-limitations">Limitations</h5><ul class="list" id="1990648741#z62anps_275" start="1"><li class="list-item" id="1990648741#z62anps_277"><p id="1990648741#z62anps_280"><span class="control" id="1990648741#z62anps_281">No relational features</span> (e.g., foreign keys, joins, transactions)</p></li><li class="list-item" id="1990648741#z62anps_278"><p id="1990648741#z62anps_282">Doesn't always behave the same as real databases like SQL Server</p></li><li class="list-item" id="1990648741#z62anps_279"><p id="1990648741#z62anps_283">Not suitable for production</p></li></ul><p id="1990648741#z62anps_276">We will later advance to use other database providers.</p></section></section><section class="detached"><h4 id="1990648741#step-2-installing-ef-core-diagnostics" data-toc="step-2-installing-ef-core-diagnostics#Dotnet-Core-Documentation.md-step-2-installing-ef-core-diagnostics">Step 2: Installing EF Core Diagnostics</h4><p id="1990648741#z62anps_284">Search for <span class="emphasis" id="1990648741#z62anps_289"><span class="control" id="1990648741#z62anps_290">Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore</span></span> and install it in your project.</p><p id="1990648741#z62anps_285">It provides <span class="control" id="1990648741#z62anps_291">developer-friendly error pages</span> for <span class="control" id="1990648741#z62anps_292">Entity Framework Core-related exceptions</span>, especially during development, such as database errors, migration errors, and more.</p><p id="1990648741#z62anps_286">This should <span class="control" id="1990648741#z62anps_293">only be used in development</span> because it exposes detailed error information that could be a security risk in production.</p><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_287" alt="1753175682543.png" title="1753175682543.png" src="D:/writerside/Writerside/image/Readme/1753175682543.png" width="1465" height="589"><figcaption class="center-text">1753175682543.png</figcaption></figure></div><section class="detached"><h5 id="1990648741#when-to-use" data-toc="when-to-use#Dotnet-Core-Documentation.md-when-to-use">When to Use</h5><ul class="list" id="1990648741#z62anps_294" start="1"><li class="list-item" id="1990648741#z62anps_296"><p id="1990648741#z62anps_299">When you want <span class="control" id="1990648741#z62anps_300">better debugging support</span> for EF Core issues during development</p></li><li class="list-item" id="1990648741#z62anps_297"><p id="1990648741#z62anps_301">In <span class="control" id="1990648741#z62anps_302">educational or training environments</span>, to help students understand why certain DB errors are happening</p></li><li class="list-item" id="1990648741#z62anps_298"><p id="1990648741#z62anps_303">When you're building <span class="control" id="1990648741#z62anps_304">apps that heavily rely on EF Core</span> and want improved developer feedback</p></li></ul><p id="1990648741#z62anps_295">We need to register our database provider in the Program.cs file, but first, let's learn about DbContext. <span class="no-bold">👇</span></p></section></section></section></section><section class="detached"><h2 id="1990648741#what-is-dbcontext" data-toc="what-is-dbcontext#Dotnet-Core-Documentation.md-what-is-dbcontext">What is DbContext?</h2><p id="1990648741#z62anps_305">DbContext is the main class in Entity Framework Core that manages database connections and is used to query and save data.</p><p id="1990648741#z62anps_306">Think of this as a bridge between your C# code and your database.</p><section class="detached"><h3 id="1990648741#what-does-it-do" data-toc="what-does-it-do#Dotnet-Core-Documentation.md-what-does-it-do">What does it do?</h3><ul class="list" id="1990648741#z62anps_311" start="1"><li class="list-item" id="1990648741#z62anps_313"><p id="1990648741#z62anps_316">Maps your <span class="control" id="1990648741#z62anps_317">C# classes (entities)</span> to <span class="control" id="1990648741#z62anps_318">database tables</span></p></li><li class="list-item" id="1990648741#z62anps_314"><p id="1990648741#z62anps_319">Allows you to <span class="control" id="1990648741#z62anps_320">query</span>, <span class="control" id="1990648741#z62anps_321">insert</span>, <span class="control" id="1990648741#z62anps_322">update</span>, and <span class="control" id="1990648741#z62anps_323">delete</span> data</p></li><li class="list-item" id="1990648741#z62anps_315"><p id="1990648741#z62anps_324">Tracks changes to your data so it knows what to update in the database</p></li></ul><section class="detached"><h4 id="1990648741#step-3-create-a-dbcontext-class" data-toc="step-3-create-a-dbcontext-class#Dotnet-Core-Documentation.md-step-3-create-a-dbcontext-class">Step 3: Create a DbContext Class</h4><p id="1990648741#z62anps_325">In the Models folder, add a new class and name it AppDbContext.cs</p><p id="1990648741#z62anps_326">In the file, add the following:</p><div class="detached code-block" id="1990648741#z62anps_327"><pre><code class="language-csharp">using Microsoft.EntityFrameworkCore;
+
+namespace _0.EventApi.Models
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions&lt;AppDbContext&gt; options) : base(options)
+        { }
+        public DbSet&lt;Event&gt; Events =&gt; Set&lt;Event&gt;();
+    }
+}</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_328" alt="1753176789869.png" title="1753176789869.png" src="D:/writerside/Writerside/image/Readme/1753176789869.png" width="1906" height="673"><figcaption class="center-text">1753176789869.png</figcaption></figure></div></section></section><section class="detached"><h3 id="1990648741#breakdown" data-toc="breakdown#Dotnet-Core-Documentation.md-breakdown">Breakdown</h3><p id="1990648741#z62anps_329">The <span class="inline-code" id="1990648741#z62anps_330">AppDbContext</span> class is a central part of Entity Framework Core (EF Core). It represents a <span class="control" id="1990648741#z62anps_331">session with the database</span>, allowing you to perform CRUD (Create, Read, Update, Delete) operations using C# classes.</p></section><section class="detached"><h3 id="1990648741#purpose" data-toc="purpose#Dotnet-Core-Documentation.md-purpose">Purpose</h3><ul class="list" id="1990648741#z62anps_332" start="1"><li class="list-item" id="1990648741#z62anps_335"><p id="1990648741#z62anps_338">Connects the application to the database</p></li><li class="list-item" id="1990648741#z62anps_336"><p id="1990648741#z62anps_339">Maps your models (e.g., <span class="inline-code" id="1990648741#z62anps_340">Event</span>) to database tables</p></li><li class="list-item" id="1990648741#z62anps_337"><p id="1990648741#z62anps_341">Enables querying and saving of data</p></li></ul><div class="table-wrapper detached"><table id="1990648741#z62anps_333"><tr class="header-row" id="1990648741#z62anps_342"><th id="1990648741#z62anps_348"><p>Term</p></th><th id="1990648741#z62anps_349"><p>Description</p></th></tr><tr class="" id="1990648741#z62anps_343"><td id="1990648741#z62anps_350"><p>DbContext</p></td><td id="1990648741#z62anps_351"><p>Base class provided by EF Core. It handles database operations and change tracking.</p></td></tr><tr class="" id="1990648741#z62anps_344"><td id="1990648741#z62anps_352"><p>AppDbContext</p></td><td id="1990648741#z62anps_353"><p>Our custom context class inheriting from <span class="inline-code" id="1990648741#z62anps_354">DbContext</span>. We define models here as <span class="inline-code" id="1990648741#z62anps_355">DbSet&lt;&gt;</span>.</p></td></tr><tr class="" id="1990648741#z62anps_345"><td id="1990648741#z62anps_356"><p>AppDbContext(DbContextOptions <span class="inline-code" id="1990648741#z62anps_358">&lt;AppDbContext&gt;</span> options)</p></td><td id="1990648741#z62anps_357"><p>Constructor used to configure the context with settings like the connection string.</p></td></tr><tr class="" id="1990648741#z62anps_346"><td id="1990648741#z62anps_359"><p>DbSet <span class="inline-code" id="1990648741#z62anps_361">&lt;Event&gt;</span> Events</p></td><td id="1990648741#z62anps_360"><p>Represents the <span class="inline-code" id="1990648741#z62anps_362">Events</span> table in the database. You use this to access and query event records.</p></td></tr><tr class="" id="1990648741#z62anps_347"><td id="1990648741#z62anps_363"><p>Set <span class="inline-code" id="1990648741#z62anps_365">&lt;Event&gt;</span> ()</p></td><td id="1990648741#z62anps_364"><p>Built-in EF Core method that initializes the <span class="inline-code" id="1990648741#z62anps_366">DbSet</span> for a given model type.</p></td></tr></table></div><section class="detached"><h4 id="1990648741#step-4-register-the-context-in-program-cs" data-toc="step-4-register-the-context-in-program-cs#Dotnet-Core-Documentation.md-step-4-register-the-context-in-program-cs">Step 4: Register the Context in Program.cs</h4><p id="1990648741#z62anps_368">Add the following:</p><div class="detached code-block" id="1990648741#z62anps_369"><pre><code class="language-none">builder.Services.AddDbContext&lt;AppDbContext&gt;(options =&gt; options.UseInMemoryDatabase(&quot;EventDb&quot;));
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_370" alt="1753177804536.png" title="1753177804536.png" src="D:/writerside/Writerside/image/Readme/1753177804536.png" width="1659" height="535"><figcaption class="center-text">1753177804536.png</figcaption></figure></div><p id="1990648741#z62anps_371">The first line registers the <span class="inline-code" id="1990648741#z62anps_377">AppDbContext</span> with the application's <span class="control" id="1990648741#z62anps_378">dependency injection (DI) container</span> and configures it to use an <span class="control" id="1990648741#z62anps_379">in-memory database</span> called <span class="inline-code" id="1990648741#z62anps_380">&quot;EventDb&quot;</span>.</p><p id="1990648741#z62anps_372">The second line adds a special <span class="control" id="1990648741#z62anps_381">developer-friendly error page</span> that shows detailed database-related exceptions when running the app in <span class="control" id="1990648741#z62anps_382">development mode</span>.</p><ul class="list" id="1990648741#z62anps_373" start="1"><li class="list-item" id="1990648741#z62anps_383"><p id="1990648741#z62anps_386">Helps you see detailed errors if something goes wrong with EF Core (e.g., migrations or invalid queries)</p></li><li class="list-item" id="1990648741#z62anps_384"><p id="1990648741#z62anps_387">Makes debugging database issues easier during development</p></li><li class="list-item" id="1990648741#z62anps_385"><p id="1990648741#z62anps_388">Only shows detailed errors when <span class="inline-code" id="1990648741#z62anps_389">ASPNETCORE_ENVIRONMENT=Development</span></p></li></ul><p id="1990648741#z62anps_374">This usage is possible because it is made available by the Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore package.</p></section></section><section class="detached"><h3 id="1990648741#dbcontext-flow" data-toc="dbcontext-flow#Dotnet-Core-Documentation.md-dbcontext-flow">DbContext Flow</h3><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_391" alt="1753177840347.png" title="1753177840347.png" src="D:/writerside/Writerside/image/Readme/1753177840347.png" width="1659" height="535"><figcaption class="center-text">1753177840347.png</figcaption></figure></div></section></section><section class="detached"><h2 id="1990648741#concept-of-dependency-injection-di" data-toc="concept-of-dependency-injection-di#Dotnet-Core-Documentation.md-concept-of-dependency-injection-di">Concept of Dependency Injection (DI)</h2><p id="1990648741#z62anps_393"><span class="control" id="1990648741#z62anps_398">Dependency Injection (DI)</span> is a software design pattern that helps us <span class="control" id="1990648741#z62anps_399">provide objects (dependencies)</span> that a class needs, <span class="control" id="1990648741#z62anps_400">without creating them manually inside the class</span>.</p><section class="detached"><h3 id="1990648741#think-of-it-like-this" data-toc="think-of-it-like-this#Dotnet-Core-Documentation.md-think-of-it-like-this">Think of it like this <span class="no-bold">🤔</span></h3><p id="1990648741#z62anps_401">If a class needs a tool (like a hammer), instead of building the hammer itself, someone gives it the hammer ready to use.</p></section><section class="detached"><h3 id="1990648741#why-use-di" data-toc="why-use-di#Dotnet-Core-Documentation.md-why-use-di">Why Use DI?</h3><ul class="list" id="1990648741#z62anps_402" start="1"><li class="list-item" id="1990648741#z62anps_408"><p id="1990648741#z62anps_411">Keeps code clean and testable</p></li><li class="list-item" id="1990648741#z62anps_409"><p id="1990648741#z62anps_412">Reduces duplication</p></li><li class="list-item" id="1990648741#z62anps_410"><p id="1990648741#z62anps_413">Follows the principle of loose coupling (classes depend on <span class="emphasis" id="1990648741#z62anps_414">abstractions</span>, not on <span class="emphasis" id="1990648741#z62anps_415">concrete implementations</span>)</p></li></ul><p id="1990648741#z62anps_403"><span class="control" id="1990648741#z62anps_416">How it works in .NET Core</span></p><ul class="list" id="1990648741#z62anps_404" start="1"><li class="list-item" id="1990648741#z62anps_417"><p id="1990648741#z62anps_421">ASP .NET Core has built-in DI Container. Just the same way we registered the DbContext, the DI tells the system &quot;When someone asks for an <span class="inline-code" id="1990648741#z62anps_422">AppDbContext</span>, here&rsquo;s how to create it.&quot;</p></li><li class="list-item" id="1990648741#z62anps_418"><p id="1990648741#z62anps_423">Later, when your app needs that <span class="inline-code" id="1990648741#z62anps_424">AppDbContext</span> in a class (e.g., a controller or service), you don&rsquo;t create it manually &mdash; the system <span class="control" id="1990648741#z62anps_425">automatically injects it for you</span>.</p></li><li class="list-item" id="1990648741#z62anps_419"><p id="1990648741#z62anps_426">An example is registering AppDbContext with the InMemory Database. It will register <span class="control" id="1990648741#z62anps_427">AppDbContext</span> as a service. It then tells the system to use in-memory database when creating AppDbContext.</p></li><li class="list-item" id="1990648741#z62anps_420"><p id="1990648741#z62anps_428">Later when we shall be creating a class, here how the DI is injected.</p></li></ul><div class="detached code-block" id="1990648741#z62anps_405"><pre><code class="language-csharp">public class EventsController : ControllerBase
+{
+    private readonly AppDbContext _context;
+
+    public EventsController(AppDbContext context)
+    {
+        _context = context; // &lt;-- Injected automatically from the container
+    }
+
+    // Now you can use _context.Events to access your database
+}</code></pre></div><ul class="list" id="1990648741#z62anps_406" start="1"><li class="list-item" id="1990648741#z62anps_429"><p id="1990648741#z62anps_430">You do not have to use <span class="control" id="1990648741#z62anps_431">&quot;new AppDbContext(...)&quot;</span> because the framework injected it automatically.</p></li></ul><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_407" alt="1753185534393.png" title="1753185534393.png" src="D:/writerside/Writerside/image/Readme/1753185534393.png" width="494" height="561"><figcaption class="center-text">1753185534393.png</figcaption></figure></div></section><section class="detached"><h3 id="1990648741#terms-to-remember" data-toc="terms-to-remember#Dotnet-Core-Documentation.md-terms-to-remember">Terms to Remember</h3><div class="table-wrapper detached"><table id="1990648741#z62anps_432"><tr class="header-row" id="1990648741#z62anps_433"><th id="1990648741#z62anps_439"><p>Term</p></th><th id="1990648741#z62anps_440"><p>Meaning</p></th></tr><tr class="" id="1990648741#z62anps_434"><td id="1990648741#z62anps_441"><p>Dependency</p></td><td id="1990648741#z62anps_442"><p>An object a class depends on (e.g., <span class="inline-code" id="1990648741#z62anps_443">AppDbContext</span>)</p></td></tr><tr class="" id="1990648741#z62anps_435"><td id="1990648741#z62anps_444"><p>Injection</p></td><td id="1990648741#z62anps_445"><p>Supplying the dependency from outside</p></td></tr><tr class="" id="1990648741#z62anps_436"><td id="1990648741#z62anps_446"><p>Service Container</p></td><td id="1990648741#z62anps_447"><p>Built-in system in .NET Core that holds all registered services</p></td></tr><tr class="" id="1990648741#z62anps_437"><td id="1990648741#z62anps_448"><p>Register</p></td><td id="1990648741#z62anps_449"><p>Telling the container how to create a dependency</p></td></tr><tr class="" id="1990648741#z62anps_438"><td id="1990648741#z62anps_450"><p>Resolve</p></td><td id="1990648741#z62anps_451"><p>The container gives you the dependency when needed</p></td></tr></table></div></section><section class="detached"><h3 id="1990648741#summary" data-toc="summary#Dotnet-Core-Documentation.md-summary">Summary</h3><p id="1990648741#z62anps_452"><span class="control" id="1990648741#z62anps_454">How does AppDbContext work with Program.cs?</span></p><ul class="list" id="1990648741#z62anps_453" start="1"><li class="list-item" id="1990648741#z62anps_455"><p id="1990648741#z62anps_459">AppDbContext tells EF that you want to work with a table of Event objects (a database table)</p></li><li class="list-item" id="1990648741#z62anps_456"><p id="1990648741#z62anps_460">Program.cs registers AppDbContext with the built-in Dependency Injection (DI). This tells the app that &quot;Whenever someone needs <span class="emphasis" id="1990648741#z62anps_461"><span class="control" id="1990648741#z62anps_463">AppDbContext</span></span>, give them an instance that uses an in-memory database called <span class="emphasis" id="1990648741#z62anps_462"><span class="control" id="1990648741#z62anps_464">EventDb</span></span> &quot;</p></li><li class="list-item" id="1990648741#z62anps_457"><p id="1990648741#z62anps_465">In-memory database is used for testing and learning as it acts as a fake database stored in memory (RAM), so no actual SQL server is needed</p></li><li class="list-item" id="1990648741#z62anps_458"><p id="1990648741#z62anps_466">When Program.cs registers AppDbContext, you can inject it in any part of your application. We will explore this when we write CRUD operations of our Minimal API</p></li></ul></section></section><section class="detached"><h2 id="1990648741#step-5-crud-operations-for-rest-api" data-toc="step-5-crud-operations-for-rest-api#Dotnet-Core-Documentation.md-step-5-crud-operations-for-rest-api">Step 5: CRUD Operations for REST API</h2><p id="1990648741#z62anps_467">We will now proceed to write CRUD operations for an Event API. The aim is to Create, Read, Update, and Delete. Once we have these foundations, it will be much easier to grasp more concepts.</p><p id="1990648741#z62anps_468">Just after <span class="control" id="1990648741#z62anps_472">builder.Build();</span> you should have the following source code:</p><div class="detached code-block" id="1990648741#z62anps_469"><pre><code class="language-csharp">//create an event
+app.MapPost(&quot;/event&quot;, async (Event newEvent, AppDbContext db) =&gt;
+    {
+        db.Events.Add(newEvent);
+        await db.SaveChangesAsync();
+        return Results.Created($&quot;/event/{newEvent.Id}&quot;, newEvent);
+    });
+
+//get all events
+app.MapGet(&quot;/events&quot;, async(AppDbContext db) =&gt;
+    await db.Events.ToListAsync());
+
+//get event by id
+app.MapGet(&quot;/event/{id}&quot;, async (int id, AppDbContext db) =&gt;
+await db.Events.FindAsync(id)
+is Event @event
+? Results.Ok(@event)
+: Results.NotFound());
+
+//update an event
+app.MapPut(&quot;/event/{id}&quot;, async (int id, Event inputEvent, AppDbContext db) =&gt;
+{
+    var @event = await db.Events.FindAsync(id);
+
+    if (@event is null) return Results.NotFound();
+
+    @event.Title = inputEvent.Title;
+    @event.Description = inputEvent.Description;
+    @event.Capacity = inputEvent.Capacity;
+    @event.StartTime = inputEvent.StartTime;
+    @event.EndTime = inputEvent.EndTime;
+
+    await db.SaveChangesAsync();
+    return Results.NoContent();
+});
+
+//delete an event
+app.MapDelete(&quot;/event/{id}&quot;, async (int id, AppDbContext db) =&gt;
+{
+    if (await db.Events.FindAsync(id) is null)
+    {
+        return Results.NotFound();
+    }
+    else if (await db.Events.FindAsync(id) is Event @event)
+    {
+        db.Remove(@event);
+        await db.SaveChangesAsync();
+        return Results.NoContent();
+    }
+    return Results.NoContent();
+});</code></pre></div><p id="1990648741#z62anps_470">The last line of code should be <span class="control" id="1990648741#z62anps_473">app.Run();</span></p><section class="detached"><h3 id="1990648741#code-breakdown" data-toc="code-breakdown#Dotnet-Core-Documentation.md-code-breakdown">Code Breakdown</h3><p id="1990648741#z62anps_474">Let's break down the source code for better understanding:</p><section class="detached"><h4 id="1990648741#1-create-event" data-toc="1-create-event#Dotnet-Core-Documentation.md-1-create-event">1. Create Event</h4><div class="detached code-block" id="1990648741#z62anps_480"><pre><code class="language-csharp">//create an event
+app.MapPost(&quot;/event&quot;, async (Event newEvent, AppDbContext db) =&gt;
+    {
+        db.Events.Add(newEvent);
+        await db.SaveChangesAsync();
+        return Results.Created($&quot;/event/{newEvent.Id}&quot;, newEvent);
+    });</code></pre></div><p id="1990648741#z62anps_481">This route handles HTTP <span class="control" id="1990648741#z62anps_484">POST</span> requests sent to <span class="emphasis" id="1990648741#z62anps_485"><span class="control" id="1990648741#z62anps_487">/event</span></span>. Its purpose is to <span class="control" id="1990648741#z62anps_486">create and save a new event</span> in the in-memory database.</p><div class="table-wrapper detached"><table id="1990648741#z62anps_482"><tr class="header-row" id="1990648741#z62anps_488"><th id="1990648741#z62anps_494"><p>Code</p></th><th id="1990648741#z62anps_495"><p>Explanation</p></th></tr><tr class="" id="1990648741#z62anps_489"><td id="1990648741#z62anps_496"><p><span class="inline-code" id="1990648741#z62anps_498">app.MapPost(&quot;/event&quot;)</span></p></td><td id="1990648741#z62anps_497"><p><span class="inline-code" id="1990648741#z62anps_499">/event</span> is the path where the clients send the event data</p></td></tr><tr class="" id="1990648741#z62anps_490"><td id="1990648741#z62anps_500"><p><span class="inline-code" id="1990648741#z62anps_502">(Event newEvent, AppDbContext db)</span></p></td><td id="1990648741#z62anps_501"><p>Two parameters are injected: the event data from the request body i.e., Postman or REST Client (newEvent) and AppDbContext from the service container (db)</p></td></tr><tr class="" id="1990648741#z62anps_491"><td id="1990648741#z62anps_503"><p><span class="inline-code" id="1990648741#z62anps_505">db.Events.Add(newEvent)</span></p></td><td id="1990648741#z62anps_504"><p>Adds the new event to the in-memory database's Events Collection</p></td></tr><tr class="" id="1990648741#z62anps_492"><td id="1990648741#z62anps_506"><p><span class="inline-code" id="1990648741#z62anps_508">await db.SaveChangesAsync();</span></p></td><td id="1990648741#z62anps_507"><p>Saves changes to the database asynchronously (non-blocking)</p></td></tr><tr class="" id="1990648741#z62anps_493"><td id="1990648741#z62anps_509"><p><span class="inline-code" id="1990648741#z62anps_511">return Results.Created($&quot;/event/{newEvent.Id}&quot;, newEvent)</span></p></td><td id="1990648741#z62anps_510"><p>Returns an HTTP 201 Created response with the newly created event and its URL</p></td></tr></table></div><section class="detached"><h5 id="1990648741#testing-with-rest-client-now" data-toc="testing-with-rest-client-now#Dotnet-Core-Documentation.md-testing-with-rest-client-now">Testing with REST Client now</h5><p id="1990648741#z62anps_512">The scaffolded project comes with REST Client which is used to test the endpoints of the application.</p><p id="1990648741#z62anps_513">To generate the endpoints without needing to do them manually:</p><ol class="list list-decimal" id="1990648741#z62anps_514" type="1" start="1"><li class="list-item" id="1990648741#z62anps_518"><p id="1990648741#z62anps_521">Hold <span class="inline-code" id="1990648741#z62anps_522">Ctrl + Q</span> on your keyboard and search for &quot;Endpoint Explorer&quot;</p></li><li class="list-item" id="1990648741#z62anps_519"><p id="1990648741#z62anps_523">It will give you all the available endpoints</p></li><li class="list-item" id="1990648741#z62anps_520"><p id="1990648741#z62anps_524">Right-click on the <span class="inline-code" id="1990648741#z62anps_525">POST</span> request and generate the request</p></li></ol><p id="1990648741#z62anps_515">On the generated endpoint, add the following data for testing:</p><div class="detached code-block" id="1990648741#z62anps_516"><pre><code class="language-json">{
+  &quot;title&quot;: &quot;JS hackathon&quot;,
+  &quot;description&quot;: &quot;Networking and talks&quot;,
+  &quot;startTime&quot;: &quot;2025-09-10T09:00:00&quot;,
+  &quot;endTime&quot;: &quot;2025-09-10T17:00:00&quot;,
+  &quot;capacity&quot;: 150
+}</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="1990648741#z62anps_517" alt="1753185753966.png" title="1753185753966.png" src="D:/writerside/Writerside/image/Readme/1753185753966.png" width="444" height="501"><figcaption class="center-text">1753185753966.png</figcaption></figure></div></section></section><section class="detached"><h4 id="1990648741#2-get-all-events" data-toc="2-get-all-events#Dotnet-Core-Documentation.md-2-get-all-events">2. Get All Events</h4><div class="detached code-block" id="1990648741#z62anps_526"><pre><code class="language-csharp">//get all events
+app.MapGet(&quot;/events&quot;, async(AppDbContext db) =&gt;
+    await db.Events.ToListAsync());</code></pre></div><p id="1990648741#z62anps_527"><span class="control" id="1990648741#z62anps_531">What This Does:</span></p><p id="1990648741#z62anps_528">This route handles HTTP GET requests sent to <span class="inline-code" id="1990648741#z62anps_532">/events</span>. It retrieves <span class="control" id="1990648741#z62anps_533">a list of all events</span> stored in the in-memory database.</p><div class="table-wrapper detached"><table id="1990648741#z62anps_529"><tr class="header-row" id="1990648741#z62anps_534"><th id="1990648741#z62anps_538"><p>Code</p></th><th id="1990648741#z62anps_539"><p>Explanation</p></th></tr><tr class="" id="1990648741#z62anps_535"><td id="1990648741#z62anps_540"><p><span class="inline-code" id="1990648741#z62anps_542">app.MapGet(&quot;/events&quot;)</span></p></td><td id="1990648741#z62anps_541"><p>Route to the path <span class="inline-code" id="1990648741#z62anps_543">/events</span></p></td></tr><tr class="" id="1990648741#z62anps_536"><td id="1990648741#z62anps_544"><p><span class="inline-code" id="1990648741#z62anps_546">AppDbContext db</span></p></td><td id="1990648741#z62anps_545"><p>Injects AppDbContext via dependency injection to interact with the database</p></td></tr><tr class="" id="1990648741#z62anps_537"><td id="1990648741#z62anps_547"><p><span class="inline-code" id="1990648741#z62anps_549">await db.Events.ToListAsync()</span></p></td><td id="1990648741#z62anps_548"><p>Asynchronously fetches all event records from the Events table and returns them as a list</p></td></tr></table></div><section class="detached"><h5 id="1990648741#testing-with-rest-client" data-toc="testing-with-rest-client#Dotnet-Core-Documentation.md-testing-with-rest-client">Testing with REST Client</h5><ol class="list list-decimal" id="1990648741#z62anps_550" type="1" start="1"><li class="list-item" id="1990648741#z62anps_553"><p id="1990648741#z62anps_556">Hold <span class="inline-code" id="1990648741#z62anps_557">Ctrl + Q</span> on your keyboard and search for &quot;Endpoint Explorer&quot;</p></li><li class="list-item" id="1990648741#z62anps_554"><p id="1990648741#z62anps_558">It will give you all the available endpoints</p></li><li class="list-item" id="1990648741#z62anps_555"><p id="1990648741#z62anps_559">Right-click on the <span class="inline-code" id="1990648741#z62anps_560">GET</span> request and generate the request</p></li></ol><p id="1990648741#z62anps_551">On the generated endpoint, add a valid endpoint:</p><div class="detached code-block" id="1990648741#z62anps_552"><pre><code class="language-http">GET {{0.EventApi_HostAddress}}/events</code></pre></div></section></section><section class="detached"><h4 id="1990648741#3-get-an-event-by-id" data-toc="3-get-an-event-by-id#Dotnet-Core-Documentation.md-3-get-an-event-by-id">3. Get an Event by ID</h4><div class="detached code-block" id="1990648741#z62anps_561"><pre><code class="language-csharp">//get event by id
+app.MapGet(&quot;/event/{id}&quot;, async (int id, AppDbContext db) =&gt;
+await db.Events.FindAsync(id)
+is Event @event
+? Results.Ok(@event)
+: Results.NotFound());</code></pre></div><p id="1990648741#z62anps_562"><span class="control" id="1990648741#z62anps_566">What This Does:</span></p><p id="1990648741#z62anps_563">This route handles HTTP GET requests sent to /event/ . It looks up a single event using the provided <span class="control" id="1990648741#z62anps_567">id</span> from the database. If the event exists, it returns the event data; if not, it returns a &quot;Not Found&quot; response.</p><div class="table-wrapper detached"><table id="1990648741#z62anps_564"><tr class="header-row" id="1990648741#z62anps_568"><th id="1990648741#z62anps_573"><p>code</p></th><th id="1990648741#z62anps_574"><p>Explanation</p></th></tr><tr class="" id="1990648741#z62anps_569"><td id="1990648741#z62anps_575"><p>app.MapGet(&quot;/event/&quot;)</p></td><td id="1990648741#z62anps_576"><p>route a GET with dynamic id in the url path i.e /event/3</p></td></tr><tr class="" id="1990648741#z62anps_570"><td id="1990648741#z62anps_577"><p>(int id, AppDbContext db)</p></td><td id="1990648741#z62anps_578"><p>The route handler takes the id from the URL and uses<span class="control" id="1990648741#z62anps_579">Dependency Injection</span> to get the AppDbContext.</p></td></tr><tr class="" id="1990648741#z62anps_571"><td id="1990648741#z62anps_580"><p>await db.Events.FindAsync(id)</p></td><td id="1990648741#z62anps_581"><p>Looks for the event with the matching id in the database. Returns null if not found.</p></td></tr><tr class="" id="1990648741#z62anps_572"><td id="1990648741#z62anps_582"><p>is Event @event ? Results.Ok(@event) : Results.NotFound())</p></td><td id="1990648741#z62anps_583"><p>If the event exists, returns a 200 OK response with the event. If it doesn&rsquo;t, returns 404 Not Found.</p></td></tr></table></div><section class="detached"><h5 id="1990648741#testing-with-rest-client-get-by-id" data-toc="testing-with-rest-client-get-by-id#Dotnet-Core-Documentation.md-testing-with-rest-client-get-by-id">Testing with REST Client (Get by ID)</h5><ol class="list list-decimal" id="1990648741#z62anps_584" type="1" start="1"><li class="list-item" id="1990648741#z62anps_587"><p id="1990648741#z62anps_590">Hold <span class="inline-code" id="1990648741#z62anps_591">Ctrl + Q</span> on your keyboard and search for &quot;Endpoint Explorer&quot;</p></li><li class="list-item" id="1990648741#z62anps_588"><p id="1990648741#z62anps_592">It will give you all the available endpoints</p></li><li class="list-item" id="1990648741#z62anps_589"><p id="1990648741#z62anps_593">Right-click on the <span class="inline-code" id="1990648741#z62anps_594">GET{id}</span> request and generate the request</p></li></ol><p id="1990648741#z62anps_585">On the generated endpoint, add a valid id</p><div class="detached code-block" id="1990648741#z62anps_586"><pre><code class="language-http">GET {{0.EventApi_HostAddress}}/event/4</code></pre></div></section></section><section class="detached"><h4 id="1990648741#4-update-an-event" data-toc="4-update-an-event#Dotnet-Core-Documentation.md-4-update-an-event">4. Update an Event</h4><div class="detached code-block" id="1990648741#z62anps_595"><pre><code class="language-csharp">//update an event
+app.MapPut(&quot;/event/{id}&quot;, async (int id, Event inputEvent, AppDbContext db) =&gt;
+{
+    var @event = await db.Events.FindAsync(id);
+
+    if (@event is null) return Results.NotFound();
+
+    @event.Title = inputEvent.Title;
+    @event.Description = inputEvent.Description;
+    @event.Capacity = inputEvent.Capacity;
+    @event.StartTime = inputEvent.StartTime;
+    @event.EndTime = inputEvent.EndTime;
+
+    await db.SaveChangesAsync();
+    return Results.NoContent();
+});</code></pre></div><p id="1990648741#z62anps_596"><span class="control" id="1990648741#z62anps_600">What This Does:</span></p><p id="1990648741#z62anps_597">This route handles HTTP PUT requests to update an existing event in the database. The client provides an updated version of the event, and if the event exists, its values are modified and saved.</p><div class="table-wrapper detached"><table id="1990648741#z62anps_598"><tr class="header-row" id="1990648741#z62anps_601"><th id="1990648741#z62anps_609"><p>Code</p></th><th id="1990648741#z62anps_610"><p>Explanation</p></th></tr><tr class="" id="1990648741#z62anps_602"><td id="1990648741#z62anps_611"><p><span class="inline-code" id="1990648741#z62anps_613">MapPut(&quot;event/{id}&quot;)</span></p></td><td id="1990648741#z62anps_612"><p>Sets up a PUT route for updating an event by ID</p></td></tr><tr class="" id="1990648741#z62anps_603"><td id="1990648741#z62anps_614"><p><span class="inline-code" id="1990648741#z62anps_616">(int id, Event inputEvent, AppDbContext db)</span></p></td><td id="1990648741#z62anps_615"><p>The route handler receives the event <span class="control" id="1990648741#z62anps_617">id</span> from the URL, the updated event data from the request body, and a database context via <span class="control" id="1990648741#z62anps_618">Dependency Injection</span></p></td></tr><tr class="" id="1990648741#z62anps_604"><td id="1990648741#z62anps_619"><p><span class="inline-code" id="1990648741#z62anps_621">await db.Events.FindAsync(id)</span></p></td><td id="1990648741#z62anps_620"><p>Tries to find the event in the database using the provided <span class="inline-code" id="1990648741#z62anps_622">id</span></p></td></tr><tr class="" id="1990648741#z62anps_605"><td id="1990648741#z62anps_623"><p><span class="inline-code" id="1990648741#z62anps_625">if (@event is null) return Results.NotFound()</span></p></td><td id="1990648741#z62anps_624"><p>If no event is found, it returns a 404 Not Found response</p></td></tr><tr class="" id="1990648741#z62anps_606"><td id="1990648741#z62anps_626"><p><span class="inline-code" id="1990648741#z62anps_628">@event.Title = inputEvent.Title</span> ...and the rest</p></td><td id="1990648741#z62anps_627"><p>Updates each field of the found event with the new values provided</p></td></tr><tr class="" id="1990648741#z62anps_607"><td id="1990648741#z62anps_629"><p><span class="inline-code" id="1990648741#z62anps_631">await db.SaveChangesAsync()</span></p></td><td id="1990648741#z62anps_630"><p>Commits the changes to the database</p></td></tr><tr class="" id="1990648741#z62anps_608"><td id="1990648741#z62anps_632"><p><span class="inline-code" id="1990648741#z62anps_634">return Results.NoContent()</span></p></td><td id="1990648741#z62anps_633"><p>Returns a 204 No Content response to indicate the update was successful, but there's nothing to return in the body</p></td></tr></table></div><section class="detached"><h5 id="1990648741#testing-with-rest-client-update" data-toc="testing-with-rest-client-update#Dotnet-Core-Documentation.md-testing-with-rest-client-update">Testing with REST Client (Update)</h5><ol class="list list-decimal" id="1990648741#z62anps_635" type="1" start="1"><li class="list-item" id="1990648741#z62anps_638"><p id="1990648741#z62anps_641">Hold <span class="inline-code" id="1990648741#z62anps_642">Ctrl + Q</span> on your keyboard and search for &quot;Endpoint Explorer&quot;</p></li><li class="list-item" id="1990648741#z62anps_639"><p id="1990648741#z62anps_643">It will give you all the available endpoints</p></li><li class="list-item" id="1990648741#z62anps_640"><p id="1990648741#z62anps_644">Right-click on the <span class="inline-code" id="1990648741#z62anps_645">UPDATE</span> request and generate the request</p></li></ol><p id="1990648741#z62anps_636">On the generated endpoint, add the following data for testing:</p><div class="detached code-block" id="1990648741#z62anps_637"><pre><code class="language-json">{
+  &quot;id&quot;: 1,
+  &quot;title&quot;: &quot;Annual Meetup - Updated&quot;,
+  &quot;description&quot;: &quot;Networking, and workshops&quot;,
+  &quot;startTime&quot;: &quot;2025-09-10T09:00:00&quot;,
+  &quot;endTime&quot;: &quot;2025-09-10T18:00:00&quot;,
+  &quot;capacity&quot;: 245
+}</code></pre></div></section></section><section class="detached"><h4 id="1990648741#5-delete-an-event" data-toc="5-delete-an-event#Dotnet-Core-Documentation.md-5-delete-an-event">5. Delete an Event</h4><div class="detached code-block" id="1990648741#z62anps_646"><pre><code class="language-csharp">//delete an event
+app.MapDelete(&quot;/event/{id}&quot;, async (int id, AppDbContext db) =&gt;
+{
+    if (await db.Events.FindAsync(id) is null)
+    {
+        return Results.NotFound();
+    }
+    else if (await db.Events.FindAsync(id) is Event @event)
+    {
+        db.Remove(@event);
+        await db.SaveChangesAsync();
+        return Results.NoContent();
+    }
+    return Results.NoContent();
+});</code></pre></div><p id="1990648741#z62anps_647"><span class="control" id="1990648741#z62anps_651">What This Does:</span></p><p id="1990648741#z62anps_648">This endpoint handles HTTP <span class="inline-code" id="1990648741#z62anps_652">DELETE</span> requests to remove an event from the database by its ID. It first checks if the event exists and deletes it if found.</p><div class="table-wrapper detached"><table id="1990648741#z62anps_649"><tr class="header-row" id="1990648741#z62anps_653"><th id="1990648741#z62anps_661"><p>Code</p></th><th id="1990648741#z62anps_662"><p>Explanation</p></th></tr><tr class="" id="1990648741#z62anps_654"><td id="1990648741#z62anps_663"><p><span class="inline-code" id="1990648741#z62anps_665">app.MapDelete(&quot;/event/{id}&quot;)</span></p></td><td id="1990648741#z62anps_664"><p>Sets up a <span class="inline-code" id="1990648741#z62anps_666">DELETE</span> route for removing an event by ID</p></td></tr><tr class="" id="1990648741#z62anps_655"><td id="1990648741#z62anps_667"><p><span class="inline-code" id="1990648741#z62anps_669">(int id, AppDbContext db)</span></p></td><td id="1990648741#z62anps_668"><p>The handler receives the event <span class="control" id="1990648741#z62anps_670">id</span> from the URL and uses the injected database context <span class="control" id="1990648741#z62anps_671">db</span></p></td></tr><tr class="" id="1990648741#z62anps_656"><td id="1990648741#z62anps_672"><p><span class="inline-code" id="1990648741#z62anps_674">if (await db.Events.FindAsync(id) is null)</span></p></td><td id="1990648741#z62anps_673"><p>Checks if the event exists. If not, returns <span class="inline-code" id="1990648741#z62anps_675">404 Not Found</span></p></td></tr><tr class="" id="1990648741#z62anps_657"><td id="1990648741#z62anps_676"><p><span class="inline-code" id="1990648741#z62anps_678">else if (await db.Events.FindAsync(id) is Event @event)</span></p></td><td id="1990648741#z62anps_677"><p>Retrieves the event again and stores it in <span class="inline-code" id="1990648741#z62anps_679">@event</span></p></td></tr><tr class="" id="1990648741#z62anps_658"><td id="1990648741#z62anps_680"><p><span class="inline-code" id="1990648741#z62anps_682">db.Remove(@event)</span></p></td><td id="1990648741#z62anps_681"><p>Marks the event for deletion</p></td></tr><tr class="" id="1990648741#z62anps_659"><td id="1990648741#z62anps_683"><p><span class="inline-code" id="1990648741#z62anps_685">await db.SaveChangesAsync()</span></p></td><td id="1990648741#z62anps_684"><p>Commits the deletion to the database</p></td></tr><tr class="" id="1990648741#z62anps_660"><td id="1990648741#z62anps_686"><p><span class="inline-code" id="1990648741#z62anps_688">return Results.NoContent()</span></p></td><td id="1990648741#z62anps_687"><p>Returns a <span class="inline-code" id="1990648741#z62anps_689">204 No Content</span> response indicating successful deletion</p></td></tr></table></div><section class="detached"><h5 id="1990648741#testing-with-rest-client-delete" data-toc="testing-with-rest-client-delete#Dotnet-Core-Documentation.md-testing-with-rest-client-delete">Testing with REST Client (Delete)</h5><ol class="list list-decimal" id="1990648741#z62anps_690" type="1" start="1"><li class="list-item" id="1990648741#z62anps_693"><p id="1990648741#z62anps_696">Hold <span class="inline-code" id="1990648741#z62anps_697">Ctrl + Q</span> on your keyboard and search for &quot;Endpoint Explorer&quot;</p></li><li class="list-item" id="1990648741#z62anps_694"><p id="1990648741#z62anps_698">It will give you all the available endpoints</p></li><li class="list-item" id="1990648741#z62anps_695"><p id="1990648741#z62anps_699">Right-click on the <span class="inline-code" id="1990648741#z62anps_700">DELETE</span> request and generate the request</p></li></ol><p id="1990648741#z62anps_691">On the generated endpoint, add a valid id:</p><div class="detached code-block" id="1990648741#z62anps_692"><pre><code class="language-http">DELETE {{0.EventApi_HostAddress}}/event/5</code></pre></div></section></section></section></section><section class="detached"><h2 id="1990648741#step-6-mapgroup" data-toc="step-6-mapgroup#Dotnet-Core-Documentation.md-step-6-mapgroup">Step 6: MapGroup</h2><p id="1990648741#z62anps_701"><span class="no-bold">👉</span> Next, we will learn about TypedResults API to help us handle different responses of our system.</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="719159941">Minimal Apis</h1><p id="719159941#-3245tc_3">Start typing here...</p></article></div></section></div></body></html>
