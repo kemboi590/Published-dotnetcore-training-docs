@@ -3,10 +3,16 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi"
-                 name="Help Instance"
+                 name="DotNet"
                  start-page="Dotnet-Core-Documentation.md">
 
     <toc-element topic="Dotnet-Core-Documentation.md">
-        <toc-element topic="Minimal-Apis.md"/>
+        <toc-element topic="Minimal-API.md">
+            <toc-element topic="Minimal-Apis.md"/>
+            <toc-element topic="EF-Core.md"/>
+            <toc-element topic="DB-Contex.md"/>
+            <toc-element topic="CRUD-Operations-with-Minimal-API.md"/>
+            <toc-element topic="TypedResults.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>
