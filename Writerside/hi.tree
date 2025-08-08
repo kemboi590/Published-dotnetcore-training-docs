@@ -14,6 +14,37 @@
             <toc-element topic="CRUD-Operations-with-Minimal-API.md"/>
             <toc-element topic="TypedResults.md"/>
             <toc-element topic="Data-Transfer-Object-DTO.md"/>
+            <toc-element topic="Connecting-to-Database.md"/>
+            <toc-element topic="Adding-User-Endpoint.md"/>
+            <toc-element topic="Conclusion-on-Minimal-Apis.md"/>
+        </toc-element>
+        <toc-element topic="Controller-Base-APIs.md">
+            <toc-element topic="Introduction-and-Setup.md"/>
+            <toc-element topic="Entitties.md"/>
+            <toc-element topic="DTOs.md"/>
+            <toc-element topic="DbContext.md"/>
+            <toc-element topic="Dependency-Injection.md"/>
+            <toc-element topic="User-Identity.md"/>
+            <toc-element topic="CRUD-Operations.md"/>
+            <toc-element topic="Testing-with-Postman.md"/>
+            <toc-element topic="Authentication.md"/>
+            <toc-element topic="Authorization.md"/>
+            <toc-element topic="Sending-Mails.md"/>
+            <toc-element topic="Logging.md"/>
+            <toc-element topic="Rate-Limiting.md"/>
+            <toc-element topic="Configure-Swagger.md"/>
+        </toc-element>
+        <toc-element topic="Microservice-Architecture.md">
+            <toc-element topic="Intro-to-MicroServices.md"/>
+        </toc-element>
+        <toc-element topic="Unit-Testing.md">
+            <toc-element topic="Introduction.md"/>
+        </toc-element>
+        <toc-element topic="Intergration-Testing.md">
+            <toc-element topic="Introduction-to-Integration-tests.md"/>
+        </toc-element>
+        <toc-element topic="Perfomance-Testing.md">
+            <toc-element topic="Introduction-to-Perfomance-Tests.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>
