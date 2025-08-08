@@ -13,6 +13,7 @@
             <toc-element topic="DB-Contex.md"/>
             <toc-element topic="CRUD-Operations-with-Minimal-API.md"/>
             <toc-element topic="TypedResults.md"/>
+            <toc-element topic="Data-Transfer-Object-DTO.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>
